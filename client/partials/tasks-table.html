@@ -1,0 +1,21 @@
+
+<table class="table table-hover table-striped table-condensed">
+    <thead>
+        <tr class="pointer">
+            <th ng-click="sortReverse=!sortReverse; sortOrder='name'"> Name </th>
+            <th ng-click="sortReverse=!sortReverse; sortOrder='actual_effort'"> Actual effort </th>
+            <th ng-click="sortReverse=!sortReverse; sortOrder='estimated_effort'"> Estimated effort</th>
+            <th ng-click="sortReverse=!sortReverse; sortOrder='due_date'"> Due date</th>
+            <th> Tags </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="task in tasks | orderBy:sortOrder:sortReverse  | filter:{ obj_status: 'active'}">
+            <td ng-class="{'high-priority': task.is_high_priority}" class="pointer" ng-click="seeDetails(task)" > {{task.name}}</td>
+            <td> {{task.actual_effort  | timeFilter}}</td>
+            <td> {{task.estimated_effort  | timeFilter}}</td>
+            <td> {{task.due_date | date:'yyyy MMM dd HH:mm:ss'}}</td>
+            <td> <div class="tagDiv pointer" ng-repeat="tag in task.tags track by $index">{{tag}}</div></td>
+        </tr>
+    </tbody>
+</table>

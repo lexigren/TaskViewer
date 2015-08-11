@@ -1,0 +1,48 @@
+<!--<html>-->
+<!--<body>-->
+<!--HELLO-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--<base href="/"/>-->
+    <!--<base href="/TaskViewer/"/>-->
+    <base href="/client"/>
+    <meta charset="UTF-8">
+    <title>Task Viewer</title>
+
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
+
+    <script type="text/javascript" src="libs/angular/angular.js"></script>
+    <script type="text/javascript" src="libs/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="libs/angular-route/angular-route.js"></script>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/MainCtrl.js"></script>
+    <script type="text/javascript" src="scripts/TasksService.js"></script>
+    <script type="text/javascript" src="scripts/tasksTableDir.js"></script>
+    <script type="text/javascript" src="scripts/DetailsCtrl.js"></script>
+    <script type="text/javascript" src="scripts/timeFilter.js"></script>
+    <script type="text/javascript" src="scripts/timeFilter.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body ng-app="app">
+
+        <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand glyphicon glyphicon-home" href="/">&nbspTaskViewer</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div ng-view class="content">
+            </div>
+        </div>
+
+</body>
+</html>
