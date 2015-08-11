@@ -1,18 +1,25 @@
 {
-  "name": "TaskView",
+  "name": "TaskViwerNode",
   "version": "0.0.0",
-  "description": "",
-  "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Task viewer",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "lexigren@gmail.com",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.13.3"
+    "express": "~4.13.3",
+    "bower": "~1.4.1",
+    "consolidate": "~0.13.1",
+    "mustache": "~2.1.3"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "~0.2.0",
+    "karma-mocha": "~0.2.0",
+    "mocha": "~2.2.5",
+    "karma-chai-plugins": "~0.6.0",
+    "karma": "~0.13.8",
+    "karma-ng-html2js-preprocessor": "~0.1.2"
   }
 }

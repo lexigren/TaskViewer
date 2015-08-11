@@ -83,23 +83,7 @@ describe('Controller: DetailsCtrl', function() {
         }));
 
         it('should redirect to home page', function () {
-
-            //var object2BeEqual = {
-            //    id: 1,
-            //    name: 'Task Two'
-            //};
-            //
-            //expect(angular.equals(scope.task, object2BeEqual)).to.be.true;
-
-            //spyOn($location, 'path');
-            //expect($location.path).toHaveBeenCalledWith('/');
-
-            console.log($location.path());
-
-            //expect($location.path()).to.be('/new/path');
-
             expect(angular.equals($location.path(),"/")).to.be.true;
-
         });
     });
 
